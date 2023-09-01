@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>IA x La Identidad</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="icon" href="https://unahur.edu.ar/wp-content/uploads/2021/03/UNAHUR-1.png">
+        <style>
+            body{
+                background-color: #fffcf1;
+                margin: 0px;
+            }
+
+            /*Top Bar CSS*/
+            .topbar{
+                background-color: #5973D6;
+                width: 100%;
+                height: 5%;
+                display: flex;
+                position: fixed;
+                z-index: 999;
+                white-space:nowrap ;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            #logo{
+                height: 80%;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left:1%;
+            }
+            #titulo{
+                align-self: center;
+                margin-left: 1.7%;
+                font-size: 200%;
+                font-style:oblique;
+                color: #4EC789;
+                font-size:2vmax;
+            }
+            li{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                font-size: 1vmax;
+            }
+
+            /*main CSS*/
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                font-size: 19px;
+            }
+            pre{
+                justify-content: left;
+                display: flex;
+                align-items: center;
+                height: auto;
+                width: 80%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 1em;
+                background-color:#4377D6 ;
+                border-radius: 30px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            h1{
+                font-size: 40px;
+            }
+            h3{
+                font-size: 30px;
+                color: #5973D6;
+            }
+            section[id]{
+                scroll-margin-top: 70px;
+            }
+            #I{
+                color: #4EC789;
+            }
+            #F{
+                color: #4EC789;
+            }
+            .container{
+                height:3500px;
+                display: flex;
+            }
+            .leftbar{
+                background-color: #fff7e1;
+                border-right-width:1px;
+                border-color: black;
+                border-right-style: solid;
+                height:100%;
+                width:30%;
+                position:relative;
+                margin-right: 1%;
+                margin-top: 2%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            #indice{
+                margin-left: auto;
+                font-size: 2vmax;
+            }
+            .text{
+                width: 100%;
+                height: 100%;
+                margin-right: 9%;
+                margin-top: 2%;
+            }
+            #creditos{
+                font-size: 19px;
+                font-weight: 600;
+            }
+            .nombres{
+                align-self: flex-end;
+                margin-top: 3%;
+                z-index: 999;
+                position: absolute;
+                display: flex;
+                background-color:#5973D6;
+                width: 100%;
+                margin-bottom: -40px;
+                height: 15%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <img id="logo" src="https://unahur.edu.ar/wp-content/uploads/2021/03/UNAHUR-1.png"> <label id="titulo">IA x La Identidad</label>
+            </div>
+        </header>
+        <main>
+
+            <div class="container">
+
+                <div class="leftbar">
+
+                    <nav>
+                        <h1 id="indice">Índice</h1>
+                        <ol>
+                            <li><a href="#1">Introducción</a></li>
+                            <ol type="I">
+                                <br>
+                                <li><a href="#1.1">¿Que es IA x La Identidad?</a></li>
+                                <br>
+                                <li><a href="#1.2">¿Que usos podemos darle?</a></li>
+                            </ol>
+                            <br>
+                            <li><a href="#2">Funcionamiento</a></li>
+                            <ol type="I">
+                                <br>
+                                <li><a href="#2.1">Concepto básico</a></li>
+                                <br>
+                                <li><a href="#2.2">Concepto complejo</a></li>
+                                <br>
+                                <ol type="i">
+                                    <li><a href="#2.2.2">Pre-Procesamiento</a></li>
+                                    <br>
+                                    <li><a href="#2.2.3">Función De Transcripción</a></li>
+                                    <br>
+                                    <li><a href="#2.2.4">Post-Procesado</a></li>
+                                    <br>
+                                    <li><a href="#2.2.5">Función De Procesado Final</a></li>
+                                </ol>
+                            </ol>
+                        </ol>
+                    </nav>
+
+
+                </div>
+
+                <div class="text">
+                    <section id="1">
+                        <h1 id="I">Introducción</h1>
+                        <section id="1.1">
+
+                            <h3>¿Que es IA x La Identidad?</h3>
+                            <p>IA x la Identidad es un <b>proyecto</b> que permite identificar y extraer parcialmente
+                                texto de imágenes.
+                            </p>
+                            <p>
+                                El código está hecho con el lenguaje de programación <b>python</b> y permite procesar copias escaneadas
+                                de <b>documentos escritos o impresos.</b>
+                                Aplica un <b>OCR</b> (reconocimiento óptico de caracteres) a un archivo de imagen y lleva a cabo
+                                algunas tareas de procesamiento posterior,
+                                como un <b>corrector ortográfico</b>, para mejorar el resultado.
+                            </p>
+                        </section>
+                        <section id="1.2">
+                            <h3>¿Que usos podemos darle?</h3>
+                            <p>El uso principal que podemos darle radica en la digitalización de <b>documentos</b>, como por ejemplo
+                                viejos diarios. 
+                                las empresas no tendrían que preocuparse a la hora de pasar datos escritos a el entorno digital, ya que,
+                                simplemente <b>escaneando</b> el documento o con una imagen del mismo, el algoritmo
+                                se encargaría de <b>extraer</b> no solo el texto sino también de <b>agruparlo</b> por sectores y almacenarlo en la base de datos.
+                            </p>
+                            <p>
+                                Con este programa los diarios, empresas, editoriales e incluso escuelas podrán tener toda su información <b>digitalizada</b> 
+                                en menos de un dia, evitando así, infinidad de archiveros repletos de papeles, e interminables búsquedas
+                                por un documento en especifico. Al almacenar todo dentro de la base de datos, <b>solo seria necesario buscar
+                                el nombre o el titulo del archivo que buscamos</b>, y aparecería no solo el documento en si, sino que a su vez aparecerían
+                                todos los segmentos de esté separado.
+                            </p>
+                        </section>
+                    </section>
+                    <section id="2">
+                        <h1 id="F">Funcionamiento</h1>
+                        <section id="2.1">
+                            <h3>Concepto básico</h3>
+                            <p>El programa utiliza dos algoritmos principales, <b>JamSpell</b> que funciona como corrector ortográfico,
+                                y con <b>Tesseract</b>, nuestra <b>OCR</b>, en lineas generales son los ojos del programa que permite
+                                identificar el texto. Con estas dos herramientas se construyen diversas funciones que van analizando la 
+                                imagen y a partir de esta crean un archivo donde almacena el texto extraído.
+                            </p>
+                        </section>
+                        <section id="2.2">
+                            <h3>concepto complejo</h3>
+                            <section id="2.2.1">
+                                <p>Dentro de un <b>entorno virtual Linux</b> el programa toma las imágenes dentro de la carpeta de origen y
+                                    las procesa con el <b>OCR Tesseract</b>, después almacena los datos extraídos
+                                    por la OCR en la carpeta de salida como archivo <b>.json</b>. 
+                                </p>
+                            </section>
+                            <section id="2.2.2">
+                                <p> Para hacer todo este pre-procesado el programa trabaja con distintas librerías como: <b>Numpy, cv2 y pandas</b>,
+                                    la librería Numpy, le permite generar distintos arrays que toman los datos del procesado de la imagen
+                                    gracias a la "vision" que ofrece cv2, para almacenarlos mas tarde en el archivo <b>.json</b> y después en la 
+                                    carpeta de salida con la llamada a la librería pandas.
+                                </p>
+                                <br>
+                                <div class="code1">
+                                    <pre>
+                                        <code>
+                                        # funciones de preprocesamiento
+                                        def preprocesamiento(img) -> np.ndarray:
+                                            # with open(img, 'r') as f:
+                                            m = cv2.imread(img)
+                                            m = cv2.cvtColor(m, cv2.COLOR_BGR2GRAY)
+                                            return m
+                                        </code>
+                                    </pre>
+                                </div>
+                                <br>
+                            </section>
+                            <section id="2.2.3">
+                                <p>
+                                    Dentro de la <b>función de transcripción</b>, el programa llama a la imagen por el <b>Name</b> que tenga, 
+                                    y a la dirección donde este almacenada. luego llama a la función de pre-procesado almacenando los datos en una variable utilizando
+                                    los <b>caracteres</b> de la configuración de idioma, el programa rellenara el hueco con un espacio
+                                    en blanco; en caso de que la imagen no haya podido ser procesada el programa retornara <b>None</b>.
+                                </p>
+                                <br>
+                                <div class="code2">
+                                    <pre>
+                                        <code>
+                                        # funciones de transcripción
+                                        def ocr_tesseract(filename, path_in):
+
+                                            #param filename: nombre del archivo.
+                                            #param path_in: directorio donde se encuentra el archivo.
+                                            #return: string con el texto leído de la imagen o None si no pudo procesarse.
+
+                                            preprocessed_img = preprocesamiento(path_in + filename)
+                                            if isinstance(preprocessed_img, np.ndarray):
+                                                custom_config = r'-c tessedit_char_whitelist="AÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ
+                                                                        aábcdeéfghiíjklmnñoópqrstuúvwxyz0123456789 -_/.,:;()"'
+                                                text = str(pytesseract.image_to_string(preprocessed_img, lang="spa", config=custom_config))
+                                                return text
+
+                                            warnings.warn("Could not process OCR in", path_in + filename)
+                                            return None
+                                        </code>
+                                    </pre>
+                                </div>
+                                <br>
+                            </section>
+                            <section id="2.2.4">
+                                <p>
+                                    Cuando ya tenemos los datos pre-procesados obtendremos una cadena de texto "cruda". Para transformar este string,
+                                    la función de <b>post-procesado</b> unirá los saltos de linea (palabras cortadas por falta de espacio en la
+                                    hoja), <b>filtrara los caracteres validos</b> (remplazara los símbolos no presentes en el lenguaje español por espacios
+                                    en blanco), determinara que el <b>texto sea util</b> verificando que tenga al menos una palabra con mas de tres caracteres,
+                                    y llamara a <b>JamSpell</b> para la corrección ortográfica. Todo esto lo hara utilizando funciones
+                                    previamente creadas y llamándolas dentro de la propia función de post-procesado.
+                                </p>
+                                <br>
+                                <div class="code3">
+                                    <pre>
+                                        <code>
+                                        def postprocesamiento(text, corrector):
+                                            
+                                            #param text: String a postprocesar.
+                                            #param corrector: Corrector ortográfico JamSpell.
+                                            #return: Texto postprocesado.
+
+                                            text = os.linesep.join([s for s in text.splitlines() if s])
+                                            text = os.linesep.join([s for s in text.splitlines() if not es_basura(s)])
+                                            text = unir_saltos_linea(text)
+                                            text = spellcheck(corrector, text)
+                                            text = filtrar_simbolosvalidos(text)
+                                            text = text.lower()
+                                            return text
+                                        </code>
+                                    </pre>
+                                </div>
+                                <br>
+                            </section>
+                            <section id="2.2.5">
+                                <p>
+                                    Finalmente une las funciones del <b>pre-procesado</b> y del <b>post-procesado</b> en una unica función y aplica a su 
+                                    vez un recuento de palabras desconocidas, finalmente almacena los datos en los distintos sectores del archivo <b>.json</b> e indica
+                                    la dirección de almacenamiento del archivo.
+                                </p>
+                                <br>
+                                    <pre>
+                                        <code>
+                                        def procesar_imgs(path_in, path_out, modelo_corrector='herramientas/model_juridico.bin'):
+                                            
+                                            #param path_in: directorio de donde tomar las imágenes.
+                                            #param path_out: directorio adonde se guardan los JSON y el CSV de reporte.
+                                            #param modelo_corrector: path del modelo del corrector ortográfico.
+
+                                            corrector = inicializar_corrector(modelo_corrector)
+                                            data = []
+                                            for filename in os.listdir(path_in):
+                                                if os.path.splitext(filename)[1] == '.tif':
+                                                    print(f'Procesando la imagen: {filename}.\n----------')
+                                                    texto = ocr_tesseract(filename, path_in)
+                                                    texto = postprocesamiento(texto, corrector)
+                                                    pp_desc = palabras_desconocidas(texto, corrector) / len(texto.split())
+                                                    data.append({'filename': filename, 'palabras_desconocidas': pp_desc})
+
+                                                    noticia_procesada = {"Diario": [],
+                                                                        "Fecha": [],
+                                                                        "Volanta": [],
+                                                                        "Título": [],
+                                                                        "Cuerpo": [],
+                                                                        "Copete": [],
+                                                                        "Destacado": [],
+                                                                        "Epígrafe": []}
+
+                                                    noticia_procesada["Cuerpo"].append(texto)
+
+                                                    with open(path_out + os.path.splitext(filename)[0] + '.json', "w") as json_file:
+                                                        json.dump(noticia_procesada, json_file, ensure_ascii=False)
+
+                                            reporte = pd.DataFrame(data=data)
+                                            reporte.to_csv(path_out + 'reporte.csv', index=False)
+                                            print(f'Procesamiento finalizado. Los resultados fueron guardados en el directorio: {path_out}.')
+                                        </code>
+                                    </pre>
+                                <br>
+                            </section>
+                        </section>
+                        <h2 id="creditos">Participantes del proyecto:</h2>
+                        <ol>
+                            <li id="creditos" type="circle">Juan Marcelo Chaves</li>
+                            <li id="creditos" type="circle">Luciano Cavalcante</li>
+                            <li id="creditos" type="circle">Sebastián Martínez</li>
+                        </ol>
+                
+                </div>
+            </div>
+
+        </main>
+    </body>
+</html>
